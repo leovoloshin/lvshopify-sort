@@ -17,5 +17,8 @@
       "src": "/(.*)",
       "dest": "api/index.js"
     }
-  ]
+  ],
+  "env": {
+    "CI": "false"
+  }
 }
