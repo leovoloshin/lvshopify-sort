@@ -1,20 +1,39 @@
 {
   "name": "lvshopify-sort-client",
   "version": "1.0.0",
+  "private": true,
   "dependencies": {
     "@apollo/client": "^3.7.0",
     "@shopify/app-bridge-react": "^3.0.0",
-    "@shopify/polaris": "11.4.0" (no ^),
+    "@shopify/polaris": "^11.4.0",
     "graphql": "^16.0.0",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "GENERATE_SOURCEMAP=false react-scripts build"
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "react-scripts": "^5.0.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
